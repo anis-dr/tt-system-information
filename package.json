@@ -24,10 +24,5 @@
     "test": "ava",
     "version": "napi version"
   },
-  "packageManager": "yarn@3.2.1",
-  "optionalDependencies": {
-    "tt-system-information-win32-x64-msvc": "0.0.0",
-    "tt-system-information-darwin-x64": "0.0.0",
-    "tt-system-information-linux-x64-gnu": "0.0.0"
-  }
+  "packageManager": "yarn@3.2.1"
 }
