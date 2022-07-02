@@ -1,5 +1,5 @@
 {
-  "name": "tt-system-information-linux-x64-gnu",
+  "name": "@insp/tt-system-information-linux-x64-gnu",
   "version": "0.0.0",
   "os": [
     "linux"
@@ -13,7 +13,8 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">= 10"
+    "node": ">= 10",
+    "electron": ">= 16"
   },
   "libc": [
     "glibc"
