@@ -128,3 +128,4 @@ export interface ComponentInfo {
   temperature: string
 }
 export function componentsInfo(): Array<ComponentInfo>
+export function getOsName(): string

@@ -417,3 +417,13 @@ fn components_info() -> Vec<ComponentInfo> {
     }
     components_info
 }
+
+#[napi]
+fn get_os_name() -> String {
+    let sys = System::new_all();
+    let os_name_op = sys.long_os_version();
+    match os_name_op {
+        None => "Unknown".to_string(),
+        Some(name) => name
+    }
+}

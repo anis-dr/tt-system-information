@@ -236,7 +236,7 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { cpuInfo, disksInfo, networksInfo, loadAverageInfo, memoryInfo, osInfo, processesInfo, batteryInfo, graphicsInfo, componentsInfo } = nativeBinding
+const { cpuInfo, disksInfo, networksInfo, loadAverageInfo, memoryInfo, osInfo, processesInfo, batteryInfo, graphicsInfo, componentsInfo, getOsName } = nativeBinding
 
 module.exports.cpuInfo = cpuInfo
 module.exports.disksInfo = disksInfo
@@ -248,3 +248,4 @@ module.exports.processesInfo = processesInfo
 module.exports.batteryInfo = batteryInfo
 module.exports.graphicsInfo = graphicsInfo
 module.exports.componentsInfo = componentsInfo
+module.exports.getOsName = getOsName
