@@ -236,6 +236,15 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { sum } = nativeBinding
+const { cpuInfo, disksInfo, networksInfo, loadAverageInfo, memoryInfo, osInfo, processesInfo, batteryInfo, graphicsInfo, componentsInfo } = nativeBinding
 
-module.exports.sum = sum
+module.exports.cpuInfo = cpuInfo
+module.exports.disksInfo = disksInfo
+module.exports.networksInfo = networksInfo
+module.exports.loadAverageInfo = loadAverageInfo
+module.exports.memoryInfo = memoryInfo
+module.exports.osInfo = osInfo
+module.exports.processesInfo = processesInfo
+module.exports.batteryInfo = batteryInfo
+module.exports.graphicsInfo = graphicsInfo
+module.exports.componentsInfo = componentsInfo
