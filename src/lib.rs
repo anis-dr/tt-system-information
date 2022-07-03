@@ -255,7 +255,7 @@ fn processes_info() -> Vec<ProcessInfo> {
             cmd: process.cmd().join(" "),
             path: process.exe().to_str().unwrap_or("").to_string(),
             pid: process.pid().as_u32(),
-            ppid: process.parent().unwrap_or_else(|| Pid::from(-1)).as_u32(),
+            ppid: process.parent().unwrap_or_else(|| Pid::from(0)).as_u32(),
             env_var: Vec::from(process.environ()),
             cwd: process.cwd().to_str().unwrap_or("").to_string(),
             root: process.root().to_str().unwrap_or("").to_string(),
